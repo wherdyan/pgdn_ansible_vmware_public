@@ -1,0 +1,11 @@
+---
+# vars file for roles/create_vm
+vcenter_ip: 10.1.142.13
+vcenter_username: redhat@vsphere.local
+vcenter_password: P@ssw0rd
+datacenter_name: LAB-PS-DC
+cluster_name: LAB-PS-CLUSTER
+vm_folder: "/"
+vm_name: pgdn_vm_test
+vm_template_name: "RHEL-8.3-template"
+vm_datastore: "ISCSI-datastore"

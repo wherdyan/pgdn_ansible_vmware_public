@@ -1,0 +1,21 @@
+- name: Clone the template
+  vmware_guest:
+    hostname: "{{ vcenter_ip }}"
+    username: "{{ vcenter_username }}"
+    password: "{{ vcenter_password }}"
+    validate_certs: False
+    name: "{{ vm_name }}" 
+    template: "{{ vm_template_name }}"
+    datacenter: "{{ datacenter_name }}"
+    folder: "{{ vm_folder }}"
+    state: poweredon
+    cluster: "{{ cluster_name }}"
+    wait_for_ip_address: yes
+    hardware:
+      memory_mb: 4096
+      num_cpus: 2
+      num_cpu_cores_per_socket: 1
+    disk:
+      - size_gb: 100
+        type: thin
+        datastore: "{{ vm_datastore }}"

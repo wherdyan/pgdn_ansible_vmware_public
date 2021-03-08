@@ -1,0 +1,8 @@
+- name: Deploy VM from a template in VMware 
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  become: false
+
+  roles:
+    - create_vm
