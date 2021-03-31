@@ -19,3 +19,8 @@
       - size_gb: 100
         type: thin
         datastore: "{{ vm_datastore }}"
+    networks:
+      - name: VM Network
+        ip: 192.168.0.100
+        netmask: 255.255.255.0
+
