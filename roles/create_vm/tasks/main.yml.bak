@@ -18,7 +18,6 @@
       memory_mb: 512
       num_cpus: 2 
       num_cpu_cores_per_socket: 1
-      scsi: paravirtual
       memory_reservation_lock: True
       mem_limit: 8096
       mem_reservation: 4096
@@ -36,7 +35,8 @@
     networks:
     - name: VM Network
       mac: aa:bb:dd:aa:00:14
+      ip: 10.1.147.132
+      netmask: 255.255.255.0
+      device_type: vmxnet3
     wait_for_ip_address: yes
-  delegate_to: localhost
-  register: deploy
 

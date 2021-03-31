@@ -10,7 +10,7 @@
     folder: "{{ vm_folder }}"
     state: poweredon
     cluster: "{{ cluster_name }}"
-    wait_for_ip_address: yes
+    wait_for_ip_address: no
     hardware:
       memory_mb: 4096
       num_cpus: 2
