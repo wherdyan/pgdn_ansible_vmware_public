@@ -20,7 +20,7 @@
         type: thin
         datastore: "{{ vm_datastore }}"
     networks:
-      - name: VM Network
-        ip: 192.168.0.100
+      - name: PGDN Ansible Network
+        ip: 10.1.147.20
         netmask: 255.255.255.0
 
