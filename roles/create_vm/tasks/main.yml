@@ -19,8 +19,3 @@
       - size_gb: 100
         type: thin
         datastore: "{{ vm_datastore }}"
-    networks:
-      - name: PGDN Ansible Network
-        ip: 10.1.147.20
-        netmask: 255.255.255.0
-
